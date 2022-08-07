@@ -1,0 +1,75 @@
+
+@use 'colors';
+
+.gear-image{width: 594px;
+height: 312px;}
+
+section{display: flex; height: 268px; margin-top: 0px;}
+
+.fazemos {
+    padding:48px 60px 58px 29px;
+    line-height: 21px;
+    font-size: 15px;
+    background-color: #d1012c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 400px;
+    height: 312px;
+
+    h1{font-size: 36px;
+        letter-spacing: 3px;
+    padding-bottom: 16px;
+    font-family: colors.$font-primary;
+
+    font-weight: 400;
+    
+    font-style: normal;}
+
+    img{padding-top:5.5rem; }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: #ba0028;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    #dark{background-color:#432e32 ;}
+    .dots{display: inline;
+    margin-left:160px;}
+
+}
+
+
+.chapter2 {margin-top: 42px;
+
+    .conheza, .produtos, .principais{ 
+    
+    padding: 38px 10px 76px 25px;
+    width: 320px;
+    height: 150px;}
+
+    h2 {font-size: 23px; margin-bottom: 1rem;font-family:'Trebuchet MS', 'Lucida Sans Unicode',
+         'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+         font-weight: lighter; letter-spacing: 1px;}
+    p{ line-height: 20.3px; margin-bottom: 16px;}
+
+}
+
+@media all and (max-width:478px) {section{width: 100vw; height: auto; display: block;}
+
+        .gear-image {width:100%; height: auto;}
+
+        .gear-image  img{width: 100%;}
+
+        .fazemos{width: 100%; height: auto;
+            .dots{display: block; margin-left: 0px;}}
+
+        .chapter2{height: auto;
+
+         .conheza, .produtos, .principais {
+            width: 100%; height: 30%; padding: 0px; margin-bottom:3rem;}
+        }  
+    }

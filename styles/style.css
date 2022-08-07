@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: myriad-pro, sans-serif, Arial, Helvetica;
+  font-size: 62.5%;
+}
+
+main {
+  margin: 0 auto;
+  width: 990px;
+  font-size: 1.4rem;
+}
+
+.button-on {
+  border: 1px solid #dcdcdc;
+  color: #dc002d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.56rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.button-on:hover {
+  color: #333333;
+  margin-left: 5px;
+}
+.button-on img:hover {
+  background: url("images/arrow.gif") no-repeat;
+}
+
+header {
+  background-color: #fbfdfb;
+  display: flex;
+  height: 133px;
+}
+header .logo {
+  height: 100%;
+}
+header nav {
+  width: 100%;
+}
+header ul {
+  display: flex;
+  margin-top: 72px;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-end;
+  margin-right: 24px;
+}
+header li {
+  margin-left: 3.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+header li:first-child {
+  color: grey;
+}
+header a {
+  text-decoration: none;
+  color: red;
+}
+header a:hover {
+  color: white;
+  padding: 4px;
+  background-color: red;
+  box-shadow: #f8430d 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px;
+}
+
+@media all and (max-width: 478px) {
+  html {
+    width: 100vw;
+  }
+
+  body {
+    background: none !important;
+    width: 100%;
+    height: auto;
+  }
+
+  main {
+    width: 100vw;
+    font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 478px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100vw;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
+  header li {
+    margin-left: 19px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  a {
+    width: auto;
+  }
+}
+@media all and (max-width: 405px) {
+  nav ul {
+    display: block;
+  }
+}
+.gear-image {
+  width: 594px;
+  height: 312px;
+}
+
+section {
+  display: flex;
+  height: 268px;
+  margin-top: 0px;
+}
+
+.fazemos {
+  padding: 48px 60px 58px 29px;
+  line-height: 21px;
+  font-size: 15px;
+  background-color: #d1012c;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  height: 312px;
+}
+.fazemos h1 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  padding-bottom: 16px;
+  font-family: myriad-pro, sans-serif, Arial, Helvetica;
+  font-weight: 400;
+  font-style: normal;
+}
+.fazemos img {
+  padding-top: 5.5rem;
+}
+.fazemos .dot {
+  height: 15px;
+  width: 15px;
+  background-color: #ba0028;
+  border-radius: 50%;
+  display: inline-block;
+}
+.fazemos #dark {
+  background-color: #432e32;
+}
+.fazemos .dots {
+  display: inline;
+  margin-left: 160px;
+}
+
+.chapter2 {
+  margin-top: 42px;
+}
+.chapter2 .conheza, .chapter2 .produtos, .chapter2 .principais {
+  padding: 38px 10px 76px 25px;
+  width: 320px;
+  height: 150px;
+}
+.chapter2 h2 {
+  font-size: 23px;
+  margin-bottom: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.chapter2 p {
+  line-height: 20.3px;
+  margin-bottom: 16px;
+}
+
+@media all and (max-width: 478px) {
+  section {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+
+  .gear-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .gear-image img {
+    width: 100%;
+  }
+
+  .fazemos {
+    width: 100%;
+    height: auto;
+  }
+  .fazemos .dots {
+    display: block;
+    margin-left: 0px;
+  }
+
+  .chapter2 {
+    height: auto;
+  }
+  .chapter2 .conheza, .chapter2 .produtos, .chapter2 .principais {
+    width: 100%;
+    height: 30%;
+    padding: 0px;
+    margin-bottom: 3rem;
+  }
+}
+footer {
+  display: flex;
+  font-size: 1.4rem;
+  width: 100%;
+  background: #e9e9e9;
+  height: 13rem;
+}
+footer .image-footer {
+  margin: 25px 30px 31px 25px;
+}
+footer .lista-footer {
+  width: 295px;
+  margin-top: 3rem;
+}
+footer .lista-footer ul {
+  list-style: none;
+}
+footer .map {
+  width: 20%;
+}
+footer .copyright {
+  width: 55%;
+}
+footer .copyright h4, footer .copyright p {
+  text-align: right;
+  margin-right: 2.5rem;
+}
+footer .copyright h4 {
+  color: tomato;
+  margin-top: 4.6rem;
+}
+footer .copyright p {
+  margin-top: 0.5rem;
+}
+
+@media all and (max-width: 478px) {
+  footer {
+    display: block;
+    height: auto;
+  }
+
+  .copyright p, h4 {
+    text-align: left !important;
+  }
+
+  .lista-footer {
+    margin: 0px;
+  }
+
+  .image-footer {
+    margin: 0px;
+  }
+}
+body {
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+}
+
+/*# sourceMappingURL=style.css.map */
